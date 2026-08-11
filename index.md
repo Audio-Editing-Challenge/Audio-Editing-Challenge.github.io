@@ -116,7 +116,6 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
 
 ## Organizers
 
-<!-- Keep the organizer grid empty until the committee, ordering, affiliations, profile URLs, and portraits are confirmed. -->
 <div id="organizers" style="max-width: 980px; margin: 24px auto 60px; padding: 0 16px;">
   <style>
     #organizers .grid {
@@ -138,7 +137,8 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
       border-radius: 8px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.04);
     }
-    #organizers .organizer img {
+    #organizers .organizer img,
+    #organizers .organizer .photo-placeholder {
       width: 88px;
       height: 88px;
       object-fit: cover;
@@ -163,7 +163,108 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
   </style>
 
   <div class="grid">
-    <!-- Confirmed organizer cards will be added here. -->
+    <div class="organizer">
+      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Zhikang Niu"></div>
+      <div class="meta">
+        <div class="name">
+          <a href="https://zhikangniu.github.io/" target="_blank" rel="noopener noreferrer">Zhikang Niu</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+        <div class="affil">Shanghai Innovation Institute</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Wenming Tu"></div>
+      <div class="meta">
+        <div class="name">
+          <a href="https://danjuan-77.github.io/" target="_blank" rel="noopener noreferrer">Wenming Tu</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+        <div class="affil">Beijing Institute for General Artificial Intelligence</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/ziyang.jpg" alt="Ziyang Ma">
+      <div class="meta">
+        <div class="name">
+          <a href="https://ziyang.tech/" target="_blank" rel="noopener noreferrer">Ziyang Ma</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+        <div class="affil">Shanghai Innovation Institute</div>
+        <div class="affil">Nanyang Technological University</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/ruiyang.jpg" alt="Ruiyang Xu">
+      <div class="meta">
+        <div class="name">
+          <a href="https://xrysamuel.github.io/" target="_blank" rel="noopener noreferrer">Ruiyang Xu</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Ruiqi Yan"></div>
+      <div class="meta">
+        <div class="name">
+          <a href="https://ruiqi-yan.github.io/" target="_blank" rel="noopener noreferrer">Ruiqi Yan</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Zilong Zheng"></div>
+      <div class="meta">
+        <div class="name">
+          <a href="https://zilongzheng.github.io/" target="_blank" rel="noopener noreferrer">Zilong Zheng</a>
+        </div>
+        <div class="affil">Beijing Institute for General Artificial Intelligence</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Chunxiang Jin"></div>
+      <div class="meta">
+        <div class="name">Chunxiang Jin</div>
+        <div class="affil">Inclusion AI, Ant Group</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/jinyu.jpeg" alt="Jinyu Li">
+      <div class="meta">
+        <div class="name">
+          <a href="https://www.microsoft.com/en-us/research/people/jinyli/" target="_blank" rel="noopener noreferrer">Jinyu Li</a>
+        </div>
+        <div class="affil">Microsoft Corporation</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/kai.jpg" alt="Kai Yu">
+      <div class="meta">
+        <div class="name">
+          <a href="https://x-lance.sjtu.edu.cn/~kaiyu/" target="_blank" rel="noopener noreferrer">Kai Yu</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/engsiong.jpeg" alt="Eng Siong Chng">
+      <div class="meta">
+        <div class="name">
+          <a href="https://aseschng.github.io/intro1.html" target="_blank" rel="noopener noreferrer">Eng Siong Chng</a>
+        </div>
+        <div class="affil">Nanyang Technological University</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/xie.jpg" alt="Xie Chen">
+      <div class="meta">
+        <div class="name">
+          <a href="https://chenxie95.github.io/en" target="_blank" rel="noopener noreferrer">Xie Chen</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+        <div class="affil">Shanghai Innovation Institute</div>
+      </div>
+    </div>
   </div>
 </div>
 
