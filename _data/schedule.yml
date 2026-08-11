@@ -1,18 +1,1 @@
-days:
-  - date: "2026-06-20"
-    events:
-      - time: "09:00-09:30"
-        title: "Opening Remarks"
-        speaker: "Dr. Jane Smith"
-      - time: "09:30-10:30"
-        title: "Keynote: Future of Urban AI"
-        speaker: "Prof. John Doe"
-      - time: "10:30-11:00"
-        title: "Coffee Break"
-        
-  - date: "2026-06-21"
-    events:
-      - time: "09:00-12:00"
-        title: "Challenge Presentations"
-      - time: "14:00-15:00"
-        title: "Award Ceremony"
+days: []

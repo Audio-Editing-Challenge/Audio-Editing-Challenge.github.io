@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Audio Reasoning Challenge"
-email: zym.22@sjtu.edu.cn
+title: "Audio Editing Challenge"
+email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  Audio Reasoning Challenge - Interspeech 2026
+  Audio Editing Challenge - ICASSP 2027 Signal Processing Grand Challenge
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://audio-reasoning-challenge.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  Audio-Reasoning-Challenge
+url: "" # add the final public site URL before deployment
+github_username: "" # add the final GitHub organization or account before deployment
 
 # Build settings
 theme: minima

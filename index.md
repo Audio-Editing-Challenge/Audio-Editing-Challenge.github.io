@@ -7,13 +7,13 @@ title: ""
 
 <div style="text-align: center; padding: 10px 20px;">
   <div style="margin-bottom: 20px;">
-    <img src="img/logo.jpg" alt="Audio Reasoning Challenge Logo" style="max-width: 220px; height: auto; display: inline-block;">
+    <!-- Challenge logo will be inserted here after the final asset is provided. -->
   </div>
-  <h1 style="font-size: 2em; margin-bottom: 8px; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: -0.5px;">Audio Reasoning Challenge</h1>
-  <h2 style="color: #666; font-weight: 400; font-size: 1.5em; margin-bottom: 10px; font-family: 'Inter', sans-serif;">Interspeech 2026</h2>
+  <h1 style="font-size: 2em; margin-bottom: 8px; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: -0.5px;">Audio Editing Challenge</h1>
+  <h2 style="color: #666; font-weight: 400; font-size: 1.5em; margin-bottom: 10px; font-family: 'Inter', sans-serif;">ICASSP 2027 Signal Processing Grand Challenge</h2>
 </div>
 
-<!-- News list: placed above Introduction. Replace items as needed -->
+<!-- News list: keep empty until an announcement and its publication date are confirmed. -->
 <div id="news" style="max-width: 980px; margin: 18px auto; padding: 12px 16px; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
   <style>
     #news .header { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.05em; margin-bottom: 8px; }
@@ -32,92 +32,43 @@ title: ""
 
   <div class="header">News</div>
   <ul>
-    <li>
-      <div class="date">2026-02-16</div>
-      <div class="item">📊 Final results are now available on the <a href="/leaderboard/" target="_blank">Leaderboard</a> page! Check out the <a href="https://github.com/ddlBoJack/MMAR" target="_blank">benchmark and scripts</a>, and read the <a href="https://arxiv.org/abs/2602.14224" target="_blank">challenge report</a>.</div>
-    </li>
-    <li>
-      <div class="date">2026-01-01</div>
-      <div class="item">🎁 To encourage creative approaches in audio reasoning, we are thrilled to announce that the organizing committee will select one team for the <strong>Best Innovative Award</strong> and a <strong>NVIDIA RTX 5070</strong> will be granted.</div>
-    </li>
-    <li>
-      <div class="date">2026-01-01</div>
-      <div class="item">🔥 Leaderboard <a href="https://www.codabench.org/competitions/12460/" target="_blank">(Single Model Track)</a> and <a href="https://www.codabench.org/competitions/12459/" target="_blank">(Agent Track)</a> goes live! We will send leaderboard registration instructions to teams who have registered <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPtlD08E8lzj18D4ndhLMaEGFDEkVwjVB4EKWEJ0if1mN5g/viewform?usp=header" target="_blank">(link)</a> here.</div>
-    </li>
-      <li>
-      <div class="date">2025-12-31</div>
-      <div class="item">Please refer to the <a href="/leaderboard/" target="_blank">Leaderboard</a> page for the detailed evaluation methods.</div>
-    </li>
-    <li>
-      <div class="date">2025-12-03</div>
-      <div class="item">Please refer to the <a href="/faqs/" target="_blank">FAQs</a> page for the frequently asked questions.</div>
-    </li>
-    <li>
-      <div class="date">2025-12-01</div>
-      <div class="item">Please join our slack and WeChat group for real-time communication in the Contact section.</div>
-    </li>
-    <li>
-      <div class="date">2025-12-01</div>
-      <div class="item">Registration <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPtlD08E8lzj18D4ndhLMaEGFDEkVwjVB4EKWEJ0if1mN5g/viewform?usp=header" target="_blank">(link)</a> for teams is open now! The deadline for registration is 2026-01-15. Register early to get latest updates.</div>
-    </li>
-    <li>
-      <div class="date">2025-12-01</div>
-      <div class="item">Baselines <a href="https://github.com/Audio-Reasoning-Challenge/Audio-Reasoning-Challenge-Baselines" target="_blank">(link)</a> released!</div>
-    </li>
-    <li>
-      <div class="date">2025-11-25</div>
-      <div class="item">Website goes live!</div>
-    </li>
+    <!-- Confirmed announcements will be added here. -->
   </ul>
 </div>
 
 ## Introduction
 
-Understanding and reasoning about sound is a fundamental aspect of human intelligence. From spoken conversations and musical compositions to subtle environmental cues, humans can not only perceive a wide variety of auditory signals but also interpret their meanings, draw inferences, and make decisions in complex acoustic scenarios. Replicating this capability in artificial systems has long been a key goal of AI research.
+Imagine editing audio as naturally as editing text: remove audience applause while leaving the speaker and room acoustics untouched; replace a song lyric while preserving the singer's voice and accompaniment; or refine a recording through several dependent rounds of instructions. Recent generative audio models are beginning to make such interactions possible, moving audio production from specialized software pipelines toward an intelligent, natural-language interface.
 
-Recent progress in Large Language Models (LLMs), combined with advances in audio processing, has given rise to **Large Audio Language Models (LALMs)**[1-10]. Leveraging large-scale multimodal training and sophisticated architectures, LALMs have achieved impressive results in audio perception tasks such as automatic speech recognition (ASR) and automated audio captioning (AAC). Beyond perception, several recent works have made initial attempts to bring explicit **Chain-of-Thought (CoT) reasoning** into the audio domain, including Audio-CoT[11], Audio-Reasoner[12], Qwen3-Omni-Thinking[13], and Audio Flamingo 3[14], demonstrating improved reasoning performance by integrating advanced cross-modal thinking strategies.
+Existing methods span domain-specific speech, music, and sound editing models, general-purpose systems that unify several editing operations and audio modalities, and planner-guided systems that decompose complex instructions into executable steps [1-12].
 
-However, despite these advances, **current LALMs still exhibit limited and unstable reasoning capabilities**. Even on established reasoning benchmarks like MMAR[15] and MMAU-Pro[16], they often produce direct answers without presenting the underlying reasoning process, or show inconsistent performance across tasks and inputs. This lack of transparent and reliable reasoning limits interpretability, trustworthiness, and the potential to generalize reasoning ability to unseen audio scenarios.
+Current systems can often complete a simple edit in one domain, yet they remain unreliable when an instruction requires precise timing, multiple operations, mixed speech-music-sound content, multi-step reasoning, or multi-round interaction. Even when the requested change is successful, a model may alter speaker identity, musical structure, background ambience, or overall audio quality. On MMAE, existing systems achieve below 5% Exact Match Rate, revealing a wide gap between producing a plausible result and executing an edit completely and faithfully [13].
 
 ## Challenge Goals
 
-To address this gap, we have **enriched the MMAR benchmark with manually labeled CoT annotations and explicit reasoning cues**, enabling systematic evaluation of LALMs in reasoning-intensive tasks. Building on this resource, we propose the **Audio Reasoning Challenge at Interspeech 2026**, designed to push LALMs beyond surface-level response accuracy toward robust, interpretable reasoning. 
+The **Audio Editing Challenge at ICASSP 2027** studies how to build general-purpose audio editors that can accurately perceive and understand source audio, reason about potentially complex user instructions, and generate the requested modification while preserving everything that should remain unchanged.
 
-Our evaluation framework adopts a **stricter criterion: a prediction is considered correct only if both the reasoning path and the final answer are accurate**, ensuring that models are rewarded for genuine, logically consistent thought processes. The challenge features two complementary tracks:
+The challenge features two complementary tracks:
 
-1. **Single Model Track:** Participants can use open-source data to post-train open-source models, focusing on intrinsic model reasoning capabilities.
-2. **Agent Track:** Participants can use open-source models to build an agent system or pipeline without human-in-the-loop, emphasizing system-level orchestration and tool use.
+1. **Single Model Track:** Build one end-to-end model that directly transforms the input audio according to the instruction. This track studies intrinsic, unified audio editing capability without external models or tools.
+2. **Agent Track:** Build an autonomous editing system that may plan, invoke multiple locally deployed models or signal-processing tools, inspect intermediate results, and revise its output. This track studies orchestration, tool use, and self-correction.
 
 <div style="text-align: center; margin: 40px 0;">
-  <img src="img/example.png" alt="Audio Reasoning Challenge Overview" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p style="margin-top: 12px; color: #666; font-size: 14px; font-style: italic;">Examples (with CoT annotated) from the MMAR benchmark, spanning audio, speech, music, and their mix, and illustrating challenges at the signal, perceptual, semantic, and cultural levels.</p>
+  <img src="img/example.png" alt="Representative MMAE audio editing examples" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <p style="margin-top: 12px; color: #666; font-size: 14px; font-style: italic;">Representative examples from the MMAE benchmark, illustrating diverse audio modalities, task complexity, editing granularity and operations, and rubric-based evaluation.</p>
 </div>
-
-<!-- ### Why This Challenge Matters
-
-**1. Strict, Reasoning-First Evaluation**  
-A prediction is correct only if both the CoT path and the final answer are accurate. This closes the "answer-only" loophole, directly targeting shallow pattern matching and rewarding faithful, stepwise reasoning in large audio language models.
-
-**2. Comprehensive Real-World Coverage**  
-The challenge operationalizes LALM reasoning breadth through 1,000 real-world items spanning speech, sound, music, and their mixtures, hierarchically organized across signal, perception, semantic, and cultural layers. This multi-level design stresses compositional, cross-domain reasoning that better reflects real use cases than single-domain benchmarks. **Importantly, it aligns with Interspeech 2026's "Speaking Together" theme by bridging communities across speech, audio, music, and reasoning to build trustworthy, explainable audio-language systems.**
-
-**3. Two Complementary Perspectives**  
-The single model and agent tracks enable rigorous comparisons between monolithic LALMs and tool-using/plan-execute agents. This disentangles pure model reasoning from orchestration and tool-use, offering clearer insights into where reasoning gains originate.
-
-**4. Community-Driven Progress**  
-By releasing CoT annotations, baseline systems, and transparent scoring scripts (including reasoning-path validation), the challenge promotes reproducibility, error analysis, and principled progress in audio reasoning research. -->
 
 ## Challenge Tracks
 
 ### Track 1: Single Model Track
 
-Participants build a **single, end-to-end Audio–Language Model** that consumes the audio and produces (i) a Chain-of-Thought (CoT) reasoning trace and (ii) a final answer. Systems must perform **intrinsic reasoning within one forward** without delegating to external tools, APIs, search engines, or separate controllers. The goal is to isolate **model-internal reasoning** quality under our strict criterion: a prediction is counted correct only if both the CoT and the final answer are validated.
+Participants build a **single, end-to-end audio editing model** that consumes one or more input recordings and a natural-language instruction and directly produces the edited audio. All learned components used to understand and execute the edit must belong to one model, without delegating to separately trained perception models, planners, editors, or external services.
 
 [Learn more about Track 1](track1)
 
 ### Track 2: Agent Track
 
-Participants design an **audio reasoning agent** that may orchestrate **multiple open-source models and tools** (e.g., ASR, separation, beat/onset tracking, captioners, planners) to produce a CoT path and a final answer. This track evaluates **system-level reasoning**: planning, tool selection, and self-checking under the same strict correctness criterion. The emphasis is on transparent trajectories that reveal how intermediate audio analyses contribute to decisions, moving beyond answer-only pipelines.
+Participants build an **autonomous audio editing agent** that may orchestrate multiple open-source models and signal-processing tools, including ASR, captioning, source separation, acoustic analysis, planning, and iterative editing. An agent may maintain structured memory, inspect intermediate audio, and revise its output.
 
 [Learn more about Track 2](track2)
 
@@ -125,80 +76,49 @@ Participants design an **audio reasoning agent** that may orchestrate **multiple
 
 ### Benchmark
 
-All submissions will be evaluated on the updated version of **MMAR benchmark**, a 1,000-item dataset designed for deep audio reasoning across speech, sound, music, and mixed-modality scenarios. Each sample contains audio, a question, a ground-truth answer, and a newly annotated CoT rationale.
+During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics**. The dataset is available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). The final stage introduces **450 previously unreleased examples** constructed through the same MMAE pipeline and manually annotated and verified. Test inputs and editing instructions will be provided for inference, while the rubrics remain private until the official results are finalized. The complete final set and its rubrics will be released after the competition.
 
 ### Submission Format
 
-Participants must submit a JSONL file to the online leaderboard, where each line contains:
+For each test item, participants submit the edited audio file and a JSONL record that maps the sample ID to its relative audio path:
 
 ```json
-{
-  "id": "<sample_id>",
-  "thinking_prediction": "<model_or_agent_generated_CoT>",
-  "answer_prediction": "<final_prediction>"
-}
+{"id": "<sample_id>", "audio_path": "audio/<sample_id>.wav"}
 ```
 
-The leaderboard will automatically compute all metrics and rank systems by the primary score.
+The audio files and JSONL manifest are packaged together and uploaded to the challenge leaderboard. The two tracks are ranked independently.
 
 ### Evaluation Metrics
 
-1. **Answer Correctness**: If the `answer_prediction` is **incorrect**, the score is **0**.
-2. **Reasoning Quality**: If the answer is **correct**, an LLM-as-a-judge evaluates the `thinking_prediction` on a scale of **0.2 to 1.0** (in 0.2 increments).
-3. **Stability Mechanism**: To account for variance, each submission is calculated based on **5 independent evaluation runs**. The final score for each metric will be **the mean of the 3 middle runs**, effectively discarding the highest and lowest results.
+Each rubric is evaluated three times by a frozen Qwen3-Omni model serving as the judge, with shuffled answer choices and majority voting [16]. The leaderboard reports:
 
-<!-- We adopt a two-stage scoring protocol that jointly assesses **Answer Correctness** and **Reasoning Quality**.
+1. **Instruction Following Rate (IFR):** the average score over rubrics that verify whether the requested edits were correctly executed.
+2. **Consistency Rate (CR):** the average score over rubrics that verify whether unrelated audio content and quality were preserved.
+3. **Exact Match Rate (EMR):** the proportion of samples for which all instruction-following and consistency rubrics are satisfied.
 
-- **Metric 1: Reasoning Score (Primary)**  
-  1. If the **`answer_prediction`** is **incorrect**, the model's score is immediately set to **0**.
-  2. If the **`answer_prediction`** is **correct**, the score is assigned based on the quality of the **`thinking_prediction`**. Scores are assigned in 0.2 increments, from **0.2** to **1.0**.
-  3. This metric is computed using an LLM-as-a-judge protocol with carefully designed evaluation criteria for consistency and reliability.
-
-- **Metric 2: Cue Score**  
-
-$$
-  \text{Cue Score} = \frac{\#\text{correct cues mentioned}}{\#\text{all ground-truth cues}}
-$$
-
-  1. We measure the proportion of correctly recovered reasoning cues within the generated CoT.
-  2. This captures how well a model identifies perceptual and structural evidence in the audio, even if its final answer is incorrect. 
-  
-Not that systems are ranked by **Metric 1**. Metric 2 is used for tie-breaking and qualitative leaderboard highlights (e.g., "Best Evidence Alignment"). Both Metric 1 and Metric 2 scores will be calculated **based on 5 evaluation runs**. The final score for each metric will be **the mean of the 3 middle runs**, effectively discarding the highest and lowest results.  -->
+Systems are ranked primarily by **Overall EMR**, with ties broken first by Overall IFR and then by Overall CR.
 
 ## Registration and Leaderboard
-Registration for the leaderboard and Google Form submission are required. Refer to the Leaderboard tab for more details. 
+
+<!-- Registration form and leaderboard URLs will be inserted after they are confirmed. -->
 
 [Learn more about Leaderboard](leaderboard)
 
-## Paper submission
+## Paper Submission
 
-Participants can submit a paper describing the submitted model or system to the Interspeech 2026. Paper submission is independent of the leaderboard ranking. Submissions describing the competition systems or reporting research results for audio reasoningng equally welcome. The submitted papers will go through the same review process as the regular papers and will be indexed and included in the ISCA archive. 
+The top three teams in each track will be invited to submit a two-page ICASSP 2027 paper and present their work in the Grand Challenge session.
 
 [Learn more about Timeline](timeline)
 
 ## Contact
-We have a Slack channel and a WeChat group for real-time communication. Please send an [email](mailto:zym.22@sjtu.edu.cn) if you have any private questions. 
 
-<!-- QR codes (Slack / WeChat) -->
-<div style="max-width: 720px; margin: 14px auto 22px; display:flex; gap:20px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
-  <div style="text-align:center; min-width: 150px;">
-    <img src="img/qrcodes/slack-qrcode.png" alt="Slack Channel QR Code" style="width:160px; height:160px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="margin-top:8px; color:#666; font-size:13px;">Slack Channel</div>
-    <div style="font-size:12px; margin-top:4px;"><a href="https://join.slack.com/t/arc-is26/shared_invite/zt-3j95gc30m-hZoEdpejS4XyZnDP9eWrvA" target="_blank">Join Slack</a></div>
-  </div>
-  <div style="text-align:center; min-width: 150px;">
-    <img src="img/qrcodes/wechat-qrcode.jpg" alt="WeChat Group QR Code" style="width:160px; height:160px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-    <div style="margin-top:8px; color:#666; font-size:13px;">WeChat Group</div>
-    <div style="font-size:12px; margin-top:4px; color:#666;">Scan to join</div>
-  </div>
-</div>
+<!-- Contact email, community links, and QR codes will be inserted after they are confirmed. -->
 
 ## Organizers
 
-<!-- New responsive organizers block: replace image paths/names/affiliations as needed -->
+<!-- Keep the organizer grid empty until the committee, ordering, affiliations, profile URLs, and portraits are confirmed. -->
 <div id="organizers" style="max-width: 980px; margin: 24px auto 60px; padding: 0 16px;">
   <style>
-    /* simple responsive grid + item layout */
     #organizers .grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -240,124 +160,13 @@ We have a Slack channel and a WeChat group for real-time communication. Please s
       font-size: 0.8em;
       line-height: 1.2;
     }
-
   </style>
 
   <div class="grid">
-    <div class="organizer">
-      <img src="img/organizers/ziyang.jpg" alt="Organizer 1">
-      <div class="meta">
-        <div class="name">
-          <a href="http://ziyang.tech/" target="_blank">Ziyang Ma</a>
-        </div>
-        <div class="affil">Shanghai Jiao Tong University</div>
-        <div class="affil">Nanyang Technological University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/yinghao.jpeg" alt="Organizer 2">
-      <div class="meta">
-        <div class="name">
-          <a href="https://nicolaus625.github.io/" target="_blank">Yinghao Ma</a>
-        </div>
-        <div class="affil">Queen Mary University of London</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/huck.jpeg" alt="Organizer 3">
-      <div class="meta">
-        <div class="name">
-          <a href="https://huckiyang.github.io/" target="_blank">Chao-Han Huck Yang</a>
-        </div>
-        <div class="affil">NVIDIA Research</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/ruiyang.jpg" alt="Organizer 4">
-      <div class="meta">
-        <div class="name">
-          <a href="https://scholar.google.com/citations?hl=en&user=dCADJl0AAAAJ" target="_blank">Ruiyang Xu</a>
-        </div>
-        <div class="affil">Shanghai Jiao Tong University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/bohan.jpg" alt="Organizer 5">
-      <div class="meta">
-        <div class="name">
-          <a href="https://scholar.google.com/citations?hl=en&user=ci5K3f4AAAAJ" target="_blank">Bohan Li</a>
-        </div>
-        <div class="affil">Shanghai Jiao Tong University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/jaeyeon.jpg" alt="Organizer 6">
-      <div class="meta">
-        <div class="name">
-          <a href="https://jaeyeonkim99.github.io/" target="_blank">Jaeyeon Kim</a>
-        </div>
-        <div class="affil">Carnegie Mellon University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/jin.jpg" alt="Organizer 7">
-      <div class="meta">
-        <div class="name">
-          <a href="https://jxu-thu.github.io/" target="_blank">Jin Xu</a>
-        </div>
-        <div class="affil">Alibaba Group</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/jinyu.jpeg" alt="Organizer 8">
-      <div class="meta">
-        <div class="name">
-          <a href="https://www.microsoft.com/en-us/research/people/jinyli/" target="_blank">Jinyu Li</a>
-        </div>
-        <div class="affil">Microsoft Corporation</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/carlos.jpeg" alt="Organizer 9">
-      <div class="meta">
-        <div class="name">
-          <a href="https://carlosbusso.com/" target="_blank">Carlos Busso</a>
-        </div>
-        <div class="affil">Carnegie Mellon University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/kai.jpg" alt="Organizer 10">
-      <div class="meta">
-        <div class="name">
-          <a href="https://x-lance.sjtu.edu.cn/~kaiyu/" target="_blank">Kai Yu</a>
-        </div>
-        <div class="affil">Shanghai Jiao Tong University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/engsiong.jpeg" alt="Organizer 11">
-      <div class="meta">
-        <div class="name">
-          <a href="https://aseschng.github.io/intro1.html" target="_blank">Eng Siong Chng</a>
-        </div>
-        <div class="affil">Nanyang Technological University</div>
-      </div>
-    </div>
-    <div class="organizer">
-      <img src="img/organizers/xie.jpg" alt="Organizer 12">
-      <div class="meta">
-        <div class="name">
-          <a href="https://chenxie95.github.io/en" target="_blank">Xie Chen</a>
-        </div>
-        <div class="affil">Shanghai Jiao Tong University</div>
-      </div>
-    </div>
+    <!-- Confirmed organizer cards will be added here. -->
   </div>
 </div>
 
-
-<!-- References: add after Organizers -->
 <div id="references" style="max-width: 980px; margin: 12px auto 40px; padding: 16px; border-radius: 8px; background:#fff; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
   <style>
     #references h2 { font-family: 'Inter', sans-serif; font-size: 1.1em; margin: 0 0 10px; }
@@ -368,28 +177,28 @@ We have a Slack channel and a WeChat group for real-time communication. Please s
   </style>
 
   <h2>References</h2>
-    <li id="ref-1">[1] Gong, Yuan, et al. "Joint audio and speech understanding." Proc. ASRU (2023).</li>
-    <li id="ref-2">[2] Tang, Changli, et al. "SALMONN: Towards generic hearing abilities for large language models." Proc. ICLR (2024).</li>
-    <li id="ref-3">[3] Chu, Yunfei, et al. "Qwen-Audio: Advancing universal audio understanding via unified large-scale audio-language models." arXiv preprint arXiv:2311.07919 (2023).</li>
-    <li id="ref-4">[4] Chu, Yunfei, et al. "Qwen2-Audio technical report." arXiv preprint arXiv:2407.10759 (2024).</li>
-    <li id="ref-5">[5] Ghosh, Sreyan, et al. "GAMA: A large audio-language model with advanced audio understanding and complex reasoning abilities." Proc. EMNLP (2024).</li>
-    <li id="ref-6">[6] Kong, Zhifeng, et al. "Audio Flamingo: A novel audio language model with few-shot learning and dialogue abilities." Proc. ICML (2024).</li>
-    <li id="ref-7">[7] Ghosh, Sreyan, et al. "Audio Flamingo 2: An audio-language model with long-audio understanding and expert reasoning abilities." Proc. ICML (2025).</li>
-    <li id="ref-10">[8] Huang, Ailin, et al. "Step-Audio: Unified understanding and generation in intelligent speech interaction." arXiv preprint arXiv:2502.11946 (2025).</li>
-    <li id="ref-8">[9] Xu, Jin, et al. "Qwen2.5-Omni technical report." arXiv preprint arXiv:2503.20215 (2025).</li>
-    <li id="ref-9">[10] Ding, Ding, et al. "Kimi-Audio technical report." arXiv preprint arXiv:2504.18425 (2025).</li>
-    <li id="ref-1">[11] Ma, Ziyang, et al. "Audio-CoT: Exploring chain-of-thought reasoning in large audio language model." Proc. ASRU (2025).</li>
-    <li id="ref-2">[12] Zhifei, Xie, et al. "Audio-Reasoner: Improving Reasoning Capability in Large Audio Language Models." Proc. EMNLP (2025). </li>
-    <li id="ref-3">[13] Xu, Jin, et al. "Qwen3-Omni technical report." arXiv preprint arXiv:2509.17765 (2025).</li>
-    <li id="ref-4">[14] Goel, Arushi, et al. "Audio flamingo 3: Advancing audio intelligence with fully open large audio language models." arXiv preprint arXiv:2507.08128 (2025).</li>
-    <li id="ref-5">[15] Ma, Ziyang, et al. "MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix." Proc. NeurIPS (2025).</li>
-    <li id="ref-6">[16] Kumar, Sonal, et al. "MMAU-Pro: A challenging and comprehensive benchmark for holistic evaluation of audio general intelligence." arXiv preprint arXiv:2508.13992 (2025).</li>
+  <ol>
+    <li>Peng, Puyuan, et al. "VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild." Proc. ACL (2024).</li>
+    <li>Zhang, Yixiao, et al. "MusicMagus: Zero-Shot Text-to-Music Editing via Diffusion Models." arXiv:2402.06178 (2024).</li>
+    <li>Wang, Yuancheng, et al. "AUDIT: Audio Editing by Following Instructions with Latent Diffusion Models." Proc. NeurIPS (2023).</li>
+    <li>Tao, Ye, et al. "MMEdit: A Unified Framework for Multi-Type Audio Editing via Audio Language Model." arXiv:2512.20339 (2025).</li>
+    <li>Tian, Zeyue, et al. "Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing." Proc. SIGGRAPH (2026).</li>
+    <li>Lan, Zitong, et al. "Guiding Audio Editing with Audio Language Model." Proc. NeurIPS (2025).</li>
+    <li>Qiang, Chunyu, et al. "UniSonate: A Unified Model for Speech, Music, and Sound Effect Generation with Text Instructions." Proc. ACL (2026).</li>
+    <li>Gong, Junmin, et al. "ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation." arXiv:2602.00744 (2026).</li>
+    <li>Li, Zhaoqing, et al. "UNISON: A Unified Sound Generation and Editing Framework via Deep LLM Fusion." arXiv:2605.31530 (2026).</li>
+    <li>Chen, Junyang, et al. "CosyEdit: Unlocking End-to-End Speech Editing Capability from Zero-Shot Text-to-Speech Models." arXiv:2601.05329 (2026).</li>
+    <li>Zhang, Dong, et al. "MiMo-Audio: Audio Language Models are Few-Shot Learners." arXiv:2512.23808 (2025).</li>
+    <li>Chen, William, et al. "AudioChat: Unified Audio Storytelling, Editing, and Understanding with Transfusion Forcing." arXiv:2602.17097 (2026).</li>
+    <li>Ma, Ziyang, et al. "<a href="https://arxiv.org/abs/2606.07229" target="_blank">MMAE: A Massive Multitask Audio Editing Benchmark</a>." arXiv:2606.07229 (2026).</li>
+    <li>Yan, Chao, et al. "Step-Audio-EditX Technical Report." arXiv:2511.03601 (2025).</li>
+    <li>Yan, Canxiang, et al. "Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation." arXiv:2511.05516 (2025).</li>
+    <li>Xu, Jin, et al. "Qwen3-Omni Technical Report." arXiv:2509.17765 (2025).</li>
+  </ol>
 </div>
 
 ---
 
 <div style="text-align: center; margin-top: 60px; color: #888;">
-  <p>Follow us on GitHub for updates: 
-    <a href="https://github.com/Audio-Reasoning-Challenge">@Audio-Reasoning-Challenge</a>
-  </p>
+  <!-- Final GitHub organization or repository link will be inserted here. -->
 </div>

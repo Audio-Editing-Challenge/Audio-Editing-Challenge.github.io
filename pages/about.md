@@ -1,19 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /cfp/
+permalink: /challenge/
 ---
 
-## Topics of Interest
-
-We invite submissions on (but not limited to):
-- Emergency detection and classification
-- Real-time response systems
-- Urban data analysis
-- Multi-modal sensing
-
-## Submission Guidelines
-
-- Papers should be 6-8 pages (excluding references)
-- Use the [IEEE conference template](https://www.ieee.org/conferences/publishing/templates.html)
-- Submit via [EasyChair](https://easychair.org/conferences/?conf=urgent2026)
+The **Audio Editing Challenge** at the **ICASSP 2027 Signal Processing Grand Challenge** brings together the speech, music, audio generation, signal processing, and multimodal AI communities. The challenge studies faithful audio editing across two complementary tracks: a single end-to-end model and an autonomous editing agent.
