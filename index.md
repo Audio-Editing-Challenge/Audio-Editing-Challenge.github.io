@@ -40,9 +40,9 @@ title: ""
 
 Imagine editing audio as naturally as editing text: remove audience applause while leaving the speaker and room acoustics untouched; replace a song lyric while preserving the singer's voice and accompaniment; or refine a recording through several dependent rounds of instructions. Recent generative audio models are beginning to make such interactions possible, moving audio production from specialized software pipelines toward an intelligent, natural-language interface.
 
-Existing methods span domain-specific speech, music, and sound editing models, general-purpose systems that unify several editing operations and audio modalities, and planner-guided systems that decompose complex instructions into executable steps [1-12].
+Existing methods span domain-specific speech, music, and sound editing models, general-purpose systems that unify several editing operations and audio modalities, and planner-guided systems that decompose complex instructions into executable steps [1-13].
 
-Current systems can often complete a simple edit in one domain, yet they remain unreliable when an instruction requires precise timing, multiple operations, mixed speech-music-sound content, multi-step reasoning, or multi-round interaction. Even when the requested change is successful, a model may alter speaker identity, musical structure, background ambience, or overall audio quality. On MMAE, existing systems achieve below 5% Exact Match Rate, revealing a wide gap between producing a plausible result and executing an edit completely and faithfully [13].
+Current systems can often complete a simple edit in one domain, yet they remain unreliable when an instruction requires precise timing, multiple operations, mixed speech-music-sound content, multi-step reasoning, or multi-round interaction. Even when the requested change is successful, a model may alter speaker identity, musical structure, background ambience, or overall audio quality. On MMAE, existing systems achieve below 5% Exact Match Rate, revealing a wide gap between producing a plausible result and executing an edit completely and faithfully [14].
 
 ## Challenge Goals
 
@@ -90,7 +90,7 @@ The audio files and JSONL manifest are packaged together and uploaded to the cha
 
 ### Evaluation Metrics
 
-Each rubric is evaluated three times by a frozen Qwen3-Omni model serving as the judge, with shuffled answer choices and majority voting [16]. The leaderboard reports:
+Each rubric is evaluated three times by a frozen Qwen3-Omni model serving as the judge, with shuffled answer choices and majority voting [17]. The leaderboard reports:
 
 1. **Instruction Following Rate (IFR):** the average score over rubrics that verify whether the requested edits were correctly executed.
 2. **Consistency Rate (CR):** the average score over rubrics that verify whether unrelated audio content and quality were preserved.
@@ -112,7 +112,9 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
 
 ## Contact
 
-<!-- Contact email, community links, and QR codes will be inserted after they are confirmed. -->
+For questions about the challenge, please contact
+[Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn) or
+[Wenming Tu](mailto:tuwenming@sjtu.edu.cn).
 
 ## Organizers
 
@@ -164,7 +166,7 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
 
   <div class="grid">
     <div class="organizer">
-      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Zhikang Niu"></div>
+      <img src="img/organizers/zhikang-niu.jpg" alt="Zhikang Niu">
       <div class="meta">
         <div class="name">
           <a href="https://zhikangniu.github.io/" target="_blank" rel="noopener noreferrer">Zhikang Niu</a>
@@ -174,7 +176,7 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
       </div>
     </div>
     <div class="organizer">
-      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Wenming Tu"></div>
+      <img src="img/organizers/wenming-tu.jpg" alt="Wenming Tu">
       <div class="meta">
         <div class="name">
           <a href="https://danjuan-77.github.io/" target="_blank" rel="noopener noreferrer">Wenming Tu</a>
@@ -204,7 +206,7 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
       </div>
     </div>
     <div class="organizer">
-      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Ruiqi Yan"></div>
+      <img src="img/organizers/ruiqi-yan.jpg" alt="Ruiqi Yan">
       <div class="meta">
         <div class="name">
           <a href="https://ruiqi-yan.github.io/" target="_blank" rel="noopener noreferrer">Ruiqi Yan</a>
@@ -213,7 +215,7 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
       </div>
     </div>
     <div class="organizer">
-      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Zilong Zheng"></div>
+      <img src="img/organizers/zilong-zheng.jpg" alt="Zilong Zheng">
       <div class="meta">
         <div class="name">
           <a href="https://zilongzheng.github.io/" target="_blank" rel="noopener noreferrer">Zilong Zheng</a>
@@ -235,6 +237,15 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
           <a href="https://www.microsoft.com/en-us/research/people/jinyli/" target="_blank" rel="noopener noreferrer">Jinyu Li</a>
         </div>
         <div class="affil">Microsoft Corporation</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/carlos.jpeg" alt="Carlos Busso">
+      <div class="meta">
+        <div class="name">
+          <a href="https://carlosbusso.com/" target="_blank" rel="noopener noreferrer">Carlos Busso</a>
+        </div>
+        <div class="affil">Carnegie Mellon University</div>
       </div>
     </div>
     <div class="organizer">
@@ -291,7 +302,8 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
     <li>Chen, Junyang, et al. "CosyEdit: Unlocking End-to-End Speech Editing Capability from Zero-Shot Text-to-Speech Models." arXiv:2601.05329 (2026).</li>
     <li>Zhang, Dong, et al. "MiMo-Audio: Audio Language Models are Few-Shot Learners." arXiv:2512.23808 (2025).</li>
     <li>Chen, William, et al. "AudioChat: Unified Audio Storytelling, Editing, and Understanding with Transfusion Forcing." arXiv:2602.17097 (2026).</li>
-    <li>Ma, Ziyang, et al. "<a href="https://arxiv.org/abs/2606.07229" target="_blank">MMAE: A Massive Multitask Audio Editing Benchmark</a>." arXiv:2606.07229 (2026).</li>
+    <li>Wang, Hankun, et al. "dots.tts.edit: Precisely Controlled Speech Editing with a Continuous Autoregressive Model." arXiv:2608.02673 (2026).</li>
+    <li>Ma, Ziyang, et al. "MMAE: A Massive Multitask Audio Editing Benchmark." arXiv:2606.07229 (2026).</li>
     <li>Yan, Chao, et al. "Step-Audio-EditX Technical Report." arXiv:2511.03601 (2025).</li>
     <li>Yan, Canxiang, et al. "Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation." arXiv:2511.05516 (2025).</li>
     <li>Xu, Jin, et al. "Qwen3-Omni Technical Report." arXiv:2509.17765 (2025).</li>
