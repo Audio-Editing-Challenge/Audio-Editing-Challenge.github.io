@@ -4,10 +4,9 @@
   <div class="wrapper">
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
+    <div class="footer-col-wrapper footer-col-wrapper-balanced">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Contact Email</li>
+        <ul class="contact-list contact-list-inline">
           {%- if site.contact_emails -%}
             {%- for contact_email in site.contact_emails -%}
               <li><a class="u-email" href="mailto:{{ contact_email }}">{{ contact_email }}</a></li>

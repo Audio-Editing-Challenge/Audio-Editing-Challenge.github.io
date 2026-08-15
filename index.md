@@ -10,7 +10,7 @@ title: ""
     <!-- Challenge logo will be inserted here after the final asset is provided. -->
   </div>
   <h1 style="font-size: 2em; margin-bottom: 8px; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: -0.5px;">Audio Editing Challenge</h1>
-  <h2 style="color: #666; font-weight: 400; font-size: 1.5em; margin-bottom: 10px; font-family: 'Inter', sans-serif;">ICASSP 2027 Signal Processing Grand Challenge</h2>
+  <h2 style="color: #666; font-weight: 400; font-size: 1.5em; margin-bottom: 10px; font-family: 'Inter', sans-serif;">ICASSP 2027</h2>
 </div>
 
 <!-- News list: keep empty until an announcement and its publication date are confirmed. -->
@@ -224,7 +224,7 @@ For questions about the challenge, please contact
       </div>
     </div>
     <div class="organizer">
-      <div class="photo-placeholder" role="img" aria-label="Portrait pending for Chunxiang Jin"></div>
+      <img src="img/organizers/chunxiang-jin.jpg" alt="Chunxiang Jin">
       <div class="meta">
         <div class="name">Chunxiang Jin</div>
         <div class="affil">Inclusion AI, Ant Group</div>
