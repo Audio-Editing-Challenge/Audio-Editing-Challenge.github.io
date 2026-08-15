@@ -5,12 +5,37 @@ title: ""
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-<div style="text-align: center; padding: 10px 20px;">
-  <div style="margin-bottom: 20px;">
-    <!-- Challenge logo will be inserted here after the final asset is provided. -->
-  </div>
-  <h1 style="font-size: 2em; margin-bottom: 8px; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: -0.5px;">Audio Editing Challenge</h1>
-  <h2 style="color: #666; font-weight: 400; font-size: 1.5em; margin-bottom: 10px; font-family: 'Inter', sans-serif;">ICASSP 2027</h2>
+<div class="challenge-hero">
+  <style>
+    .challenge-hero { text-align: center; padding: 16px 0 8px; }
+    .challenge-hero img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      max-height: 280px;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+    .challenge-hero .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    @media (max-width: 600px) {
+      .challenge-hero { padding: 8px 0 4px; }
+      .challenge-hero img { max-height: 160px; }
+    }
+  </style>
+  <img src="img/audio-editing-challenge-logo.png" alt="MMAE — ICASSP 2027 Audio Editing Challenge" width="2172" height="724" loading="eager" fetchpriority="high">
+  <h1 class="visually-hidden">Audio Editing Challenge</h1>
+  <h2 class="visually-hidden">ICASSP 2027</h2>
 </div>
 
 <!-- News list: keep empty until an announcement and its publication date are confirmed. -->
