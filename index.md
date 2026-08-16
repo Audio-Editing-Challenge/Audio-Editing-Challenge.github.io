@@ -251,6 +251,15 @@ For questions about the challenge, please contact
       </div>
     </div>
     <div class="organizer">
+      <img src="img/organizers/bohan-li.jpg" alt="Bohan Li">
+      <div class="meta">
+        <div class="name">
+          <a href="https://scholar.google.com/citations?user=ci5K3f4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Bohan Li</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+      </div>
+    </div>
+    <div class="organizer">
       <img src="img/organizers/ruiqi-yan.jpg" alt="Ruiqi Yan">
       <div class="meta">
         <div class="name">
