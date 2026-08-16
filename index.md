@@ -33,7 +33,7 @@ title: ""
       .challenge-hero img { max-height: 160px; }
     }
   </style>
-  <img src="img/audio-editing-challenge-logo.png" alt="MMAE — ICASSP 2027 Audio Editing Challenge" width="2172" height="724" loading="eager" fetchpriority="high">
+  <img src="img/audio-editing-challenge-logo-hd-4k.png" alt="MMAE — ICASSP 2027 Audio Editing Challenge" width="3840" height="1341" loading="eager" fetchpriority="high">
   <h1 class="visually-hidden">Audio Editing Challenge</h1>
   <h2 class="visually-hidden">ICASSP 2027</h2>
 </div>
@@ -82,6 +82,19 @@ The challenge features two complementary tracks:
   <img src="img/example.png" alt="Representative MMAE audio editing examples" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <p style="margin-top: 12px; color: #666; font-size: 14px; font-style: italic;">Representative examples from the MMAE benchmark, illustrating diverse audio modalities, task complexity, editing granularity and operations, and rubric-based evaluation.</p>
 </div>
+
+## Timeline
+
+| Event | Date |
+|-------|------|
+| Participant Registration Opens | September 1, 2026 |
+| Challenge Announcement, Detailed Rules, and Data Release | October 1, 2026 |
+| Leaderboard Opens for Submissions | November 1, 2026 |
+| Leaderboard Submission Deadline | December 1, 2026 |
+| Submission Verification, Final Rankings, and Winner Announcement | December 8, 2026 |
+| Invited Two-Page ICASSP Paper Submission Deadline | January 7, 2027 |
+
+**Note:** After December 1, 2026, the leaderboard will remain open and continue to evaluate new submissions, but these submissions will not be considered for the official challenge rankings. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
 
 ## Challenge Tracks
 
@@ -132,8 +145,6 @@ Systems are ranked primarily by **Overall EMR**, with ties broken first by Overa
 ## Paper Submission
 
 The top three teams in each track will be invited to submit a two-page ICASSP 2027 paper and present their work in the Grand Challenge session.
-
-[Learn more about Timeline](timeline)
 
 ## Contact
 
@@ -231,6 +242,15 @@ For questions about the challenge, please contact
       </div>
     </div>
     <div class="organizer">
+      <img src="img/organizers/hankun-wang.png" alt="Hankun Wang">
+      <div class="meta">
+        <div class="name">
+          <a href="https://scholar.google.com/citations?user=mcQFLgoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Hankun Wang</a>
+        </div>
+        <div class="affil">Shanghai Jiao Tong University</div>
+      </div>
+    </div>
+    <div class="organizer">
       <img src="img/organizers/ruiqi-yan.jpg" alt="Ruiqi Yan">
       <div class="meta">
         <div class="name">
@@ -253,6 +273,15 @@ For questions about the challenge, please contact
       <div class="meta">
         <div class="name">Chunxiang Jin</div>
         <div class="affil">Inclusion AI, Ant Group</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/hung-yi-lee.jpg" alt="Hung-yi Lee">
+      <div class="meta">
+        <div class="name">
+          <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank" rel="noopener noreferrer">Hung-yi Lee</a>
+        </div>
+        <div class="affil">National Taiwan University</div>
       </div>
     </div>
     <div class="organizer">
@@ -338,5 +367,7 @@ For questions about the challenge, please contact
 ---
 
 <div style="text-align: center; margin-top: 60px; color: #888;">
-  <!-- Final GitHub organization or repository link will be inserted here. -->
+  <p>Follow us on GitHub for updates:
+    <a href="https://github.com/Audio-Editing-Challenge" target="_blank" rel="noopener noreferrer">@Audio-Editing-Challenge</a>
+  </p>
 </div>
