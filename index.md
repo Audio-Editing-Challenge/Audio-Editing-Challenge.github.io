@@ -38,7 +38,7 @@ title: ""
   <h2 class="visually-hidden">ICASSP 2027</h2>
 </div>
 
-<!-- News list: keep empty until an announcement and its publication date are confirmed. -->
+<!-- News list: newest announcements first. -->
 <div id="news" style="max-width: 980px; margin: 18px auto; padding: 12px 16px; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
   <style>
     #news .header { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.05em; margin-bottom: 8px; }
@@ -57,7 +57,10 @@ title: ""
 
   <div class="header">News</div>
   <ul>
-    <!-- Confirmed announcements will be added here. -->
+    <li>
+      <div class="date">2026-08-17</div>
+      <div class="item">Website goes live!</div>
+    </li>
   </ul>
 </div>
 
@@ -87,14 +90,15 @@ The challenge features two complementary tracks:
 
 | Event | Date |
 |-------|------|
-| Participant Registration Opens | September 1, 2026 |
-| Challenge Announcement, Detailed Rules, and Data Release | October 1, 2026 |
-| Leaderboard Opens for Submissions | November 1, 2026 |
-| Leaderboard Submission Deadline | December 1, 2026 |
-| Submission Verification, Final Rankings, and Winner Announcement | December 8, 2026 |
-| Invited Two-Page ICASSP Paper Submission Deadline | January 7, 2027 |
+| Registration Opens and Challenge Guidelines Released | September 1, 2026 |
+| Challenge Begins | October 1, 2026 |
+| Data Released and Leaderboard Opens for Submissions | November 10, 2026 |
+| Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
+| Evaluation and Reproducibility Check Completed | December 7, 2026 |
+| Final Rankings and Invited Teams Announced | December 8, 2026 |
+| Invited Two-Page ICASSP Papers Due | January 7, 2027 |
 
-**Note:** After December 1, 2026, the leaderboard will remain open and continue to evaluate new submissions, but these submissions will not be considered for the official challenge rankings. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
+**Note:** All deadlines are at 11:59 PM on the respective day in U.S. Pacific Time. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
 
 ## Challenge Tracks
 
@@ -282,6 +286,15 @@ For questions about the challenge, please contact
       <div class="meta">
         <div class="name">Chunxiang Jin</div>
         <div class="affil">Inclusion AI, Ant Group</div>
+      </div>
+    </div>
+    <div class="organizer">
+      <img src="img/organizers/pengcheng-zhu.jpg" alt="Pengcheng Zhu">
+      <div class="meta">
+        <div class="name">
+          <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=puGCxRQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Pengcheng Zhu</a>
+        </div>
+        <div class="affil">Ant Group</div>
       </div>
     </div>
     <div class="organizer">
