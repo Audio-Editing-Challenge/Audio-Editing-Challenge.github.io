@@ -8,6 +8,8 @@ permalink: /track1/
 
 Participants build a **single, end-to-end audio editing model** that consumes one or more input recordings and a natural-language instruction and directly produces the edited audio. All learned components used to understand and execute the edit must belong to one model, without delegating to separately trained perception models, planners, editors, or external services. This track isolates intrinsic, model-level editing capability.
 
+**Task Scope:** Tasks may use **any MMAE audio modality**, including speech, music, sound, and their mixtures. They are restricted to the MMAE **single** complexity category. Final evaluation will use the corresponding portion of an organizer-held internal test set.
+
 **Rules and Restrictions:**
 
 1. **Open-source models and data only.** All model components and training or post-training data must be publicly available under research-permissive terms; all external resources must be declared.

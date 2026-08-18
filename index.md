@@ -58,8 +58,8 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
-      <div class="date">2026-08-17</div>
-      <div class="item">Website goes live!</div>
+      <div class="date">2026-08-18</div>
+      <div class="item">Website goes live! 🚀🚀🚀</div>
     </li>
   </ul>
 </div>
@@ -78,8 +78,8 @@ The **Audio Editing Challenge at ICASSP 2027** studies how to build general-purp
 
 The challenge features two complementary tracks:
 
-1. **Single Model Track:** Build one end-to-end model that directly transforms the input audio according to the instruction. This track studies intrinsic, unified audio editing capability without external models or tools.
-2. **Agent Track:** Build an autonomous editing system that may plan, invoke multiple locally deployed models or signal-processing tools, inspect intermediate results, and revise its output. This track studies orchestration, tool use, and self-correction.
+1. **Single Model Track:** Build one end-to-end model that directly transforms the input audio according to the instruction. Tasks may use any MMAE audio modality, while task complexity is restricted to the MMAE **single** category. This track studies intrinsic, unified audio editing capability without external models or tools.
+2. **Agent Track:** Build an autonomous editing system that may plan, invoke multiple locally deployed models or signal-processing tools, inspect intermediate results, and revise its output. Tasks may use any MMAE audio modality and any MMAE complexity category. This track studies orchestration, tool use, and self-correction.
 
 <div style="text-align: center; margin: 40px 0;">
   <img src="img/example.png" alt="Representative MMAE audio editing examples" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -106,11 +106,15 @@ The challenge features two complementary tracks:
 
 Participants build a **single, end-to-end audio editing model** that consumes one or more input recordings and a natural-language instruction and directly produces the edited audio. All learned components used to understand and execute the edit must belong to one model, without delegating to separately trained perception models, planners, editors, or external services.
 
+This track covers **any MMAE audio modality**, including speech, music, sound, and their mixtures. Tasks are restricted to the MMAE **single** complexity category.
+
 [Learn more about Track 1](track1)
 
 ### Track 2: Agent Track
 
 Participants build an **autonomous audio editing agent** that may orchestrate multiple open-source models and signal-processing tools, including ASR, captioning, source separation, acoustic analysis, planning, and iterative editing. An agent may maintain structured memory, inspect intermediate audio, and revise its output.
+
+This track covers **any MMAE audio modality and any MMAE complexity category**, including single and complex multi-part, multi-instruction, multi-audio, multi-round, and multi-hop tasks.
 
 [Learn more about Track 2](track2)
 
@@ -118,7 +122,7 @@ Participants build an **autonomous audio editing agent** that may orchestrate mu
 
 ### Benchmark
 
-During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics**. The dataset is available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). The final stage introduces **450 previously unreleased examples** constructed through the same MMAE pipeline and manually annotated and verified. Test inputs and editing instructions will be provided for inference, while the rubrics remain private until the official results are finalized. The complete final set and its rubrics will be released after the competition.
+During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics**. The dataset is available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). Final evaluation will use an **organizer-held internal test set** of **450 previously unreleased examples**, constructed through the same MMAE pipeline and manually annotated and verified. Track 1 will be evaluated on examples from any audio modality in the MMAE **single** complexity category; the Agent Track will be evaluated across any audio modality and any complexity category. Test inputs and editing instructions will be provided for inference, while the rubrics remain private until the official results are finalized. The complete final set and its rubrics will be released after the competition.
 
 ### Submission Format
 

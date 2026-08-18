@@ -8,6 +8,8 @@ permalink: /track2/
 
 Participants build an **autonomous audio editing agent** that may orchestrate multiple open-source models and signal-processing tools, including ASR, captioning, source separation, acoustic analysis, planning, and iterative editing. An agent may maintain structured memory, inspect intermediate audio, and revise its output. This track evaluates system-level planning, tool selection, execution, and self-correction.
 
+**Task Scope:** Tasks may use **any MMAE audio modality and any MMAE complexity category**, including single and complex multi-part, multi-instruction, multi-audio, multi-round, and multi-hop tasks. Final evaluation will use the corresponding portion of an organizer-held internal test set.
+
 **Rules and Restrictions:**
 
 1. **Open-source models, tools, and data only.** Every component and data resource must be publicly available under research-permissive terms; commercial or hosted APIs are prohibited.
