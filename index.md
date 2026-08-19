@@ -156,9 +156,21 @@ The top three teams in each track will be invited to submit a two-page ICASSP 20
 
 ## Contact
 
-For questions about the challenge, please contact
-[Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn) or
-[Wenming Tu](mailto:tuwenming@sjtu.edu.cn).
+We have a Slack workspace and a WeChat group for real-time communication. For private questions, or if an invitation link or QR code has expired, please contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn) or [Wenming Tu](mailto:tuwenming@sjtu.edu.cn).
+
+<!-- QR codes (Slack / WeChat) -->
+<div style="max-width: 720px; margin: 14px auto 22px; display:flex; gap:20px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
+  <div style="text-align:center; min-width:150px;">
+    <img src="img/qrcodes/slack-qrcode.png" alt="Slack workspace QR code" style="width:160px; height:160px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div style="margin-top:8px; color:#666; font-size:13px;">Slack Workspace</div>
+    <div style="font-size:12px; margin-top:4px;"><a href="https://join.slack.com/t/audioeditingc-lyh3904/shared_invite/zt-47n65fvg0-lUbI_Q~S2WtlkOExBtOZyA" target="_blank" rel="noopener noreferrer">Join Slack</a></div>
+  </div>
+  <div style="text-align:center; min-width:150px;">
+    <img src="img/qrcodes/wechat-qrcode.jpg" alt="WeChat group QR code" style="width:160px; height:160px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+    <div style="margin-top:8px; color:#666; font-size:13px;">WeChat Group</div>
+    <div style="font-size:12px; margin-top:4px; color:#666;">Scan to join</div>
+  </div>
+</div>
 
 ## Organizers
 
