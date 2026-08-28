@@ -3,6 +3,10 @@
 
 @import "minima";
 
+.site-header {
+  border-top: 0;
+}
+
 .site-footer {
   .footer-col-wrapper-balanced {
     display: grid;
