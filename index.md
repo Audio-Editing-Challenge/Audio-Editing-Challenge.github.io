@@ -228,7 +228,6 @@ We have a Slack workspace and a WeChat group for real-time communication. For pr
           <a href="https://zhikangniu.github.io/" target="_blank" rel="noopener noreferrer">Zhikang Niu</a>
         </div>
         <div class="affil">Shanghai Jiao Tong University</div>
-        <div class="affil">Shanghai Innovation Institute</div>
       </div>
     </div>
     <div class="organizer">
@@ -248,7 +247,6 @@ We have a Slack workspace and a WeChat group for real-time communication. For pr
           <a href="https://ziyang.tech/" target="_blank" rel="noopener noreferrer">Ziyang Ma</a>
         </div>
         <div class="affil">Shanghai Jiao Tong University</div>
-        <div class="affil">Shanghai Innovation Institute</div>
         <div class="affil">Nanyang Technological University</div>
       </div>
     </div>
@@ -365,7 +363,6 @@ We have a Slack workspace and a WeChat group for real-time communication. For pr
           <a href="https://chenxie95.github.io/en" target="_blank" rel="noopener noreferrer">Xie Chen</a>
         </div>
         <div class="affil">Shanghai Jiao Tong University</div>
-        <div class="affil">Shanghai Innovation Institute</div>
       </div>
     </div>
   </div>
