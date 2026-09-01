@@ -58,6 +58,10 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-09-01</div>
+      <div class="item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform" target="_blank" rel="noopener noreferrer">Registration</a> for teams is open now! Register early to receive the latest updates.</div>
+    </li>
+    <li>
       <div class="date">2026-08-18</div>
       <div class="item">Website goes live! 🚀🚀🚀</div>
     </li>
@@ -146,7 +150,7 @@ Systems are ranked primarily by **Overall EMR**, with ties broken first by Overa
 
 ## Registration and Leaderboard
 
-<!-- Registration form and leaderboard URLs will be inserted after they are confirmed. -->
+Team registration is now open. To participate, please complete the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform). Register early to receive the latest challenge updates.
 
 [Learn more about Leaderboard](leaderboard)
 
