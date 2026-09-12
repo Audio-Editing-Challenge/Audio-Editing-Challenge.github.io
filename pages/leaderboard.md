@@ -10,7 +10,7 @@ permalink: /leaderboard/
 
 ### Benchmark
 
-During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics** and available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). The final stage introduces **450 previously unreleased examples** constructed through the same MMAE pipeline and manually annotated and verified.
+During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics** and available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). For final evaluation, the Single Model Track and the Agent Track will each use **500 previously unreleased test examples** held by the organizers. The two tracks will be ranked independently. These examples are constructed through the same MMAE pipeline and manually annotated and verified.
 
 ### Submission Format
 
