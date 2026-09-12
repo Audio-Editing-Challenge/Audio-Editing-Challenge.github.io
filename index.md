@@ -112,7 +112,7 @@ Participants build a **single, end-to-end audio editing model** that consumes on
 
 This track covers **any MMAE audio modality**, including speech, music, sound, and their mixtures. Tasks are restricted to the MMAE **single** complexity category.
 
-[Learn more about Track 1](track1)
+[Learn more about Track 1](track1/)
 
 ### Track 2: Agent Track
 
@@ -120,7 +120,16 @@ Participants build an **autonomous audio editing agent** that may orchestrate mu
 
 This track covers **any MMAE audio modality and any MMAE complexity category**, including single and complex multi-part, multi-instruction, multi-audio, multi-round, and multi-hop tasks.
 
-[Learn more about Track 2](track2)
+[Learn more about Track 2](track2/)
+
+## Baselines
+
+The challenge provides **open-source baselines for both the Single Model Track and the Agent Track** as reproducible starting points and experimental references, helping participants run the complete workflow.
+
+- **Single Model Track: AuK-based end-to-end audio editing.** This baseline uses the AuK base model [18] to generate edited audio directly from the input audio and a natural-language instruction. To preserve the single-model setting, **Prompt Enhancer is disabled**, and the output audio duration matches the input duration. It provides a reference for exploring instruction understanding and audio editing within a single model.
+- **Agent Track: LLM-orchestrated audio tools.** This baseline uses **DeepSeek-V4-Flash** as the default router to select tools according to the editing instruction. Digital signal processing (DSP) tools handle speed, volume, and pitch adjustments; **SAM-Audio-Large** [19] handles source separation; and **AuK with Prompt Enhancer enabled** [18] handles generative audio editing.
+
+**Code:** [Audio Editing Challenge Baselines](https://github.com/Audio-Editing-Challenge/Audio-Editing-Challenge-Baseline)
 
 ## Benchmark and Evaluation Protocol
 
@@ -157,6 +166,22 @@ Team registration is now open. To participate, please complete the [registration
 ## Paper Submission
 
 The top three teams in each track will be invited to submit a two-page ICASSP 2027 paper and present their work in the Grand Challenge session.
+
+## Sponsorship
+
+<p style="margin: 20px 0;">
+  <a href="https://www.tencent.com/" target="_blank" rel="noopener noreferrer">
+    <img src="img/sponsors/tencent.png" alt="Tencent" width="240" height="72" style="display:block; width:240px; max-width:100%; height:auto;">
+  </a>
+</p>
+
+**The challenge prize pool is sponsored by Tencent, with a total of USD 7,000. The top three teams in the Single Model Track and the Agent Track will be awarded separately, with the following prizes in each track:**
+
+- **First Prize (1st place): USD 2,000**
+- **Second Prize (2nd place): USD 1,000**
+- **Third Prize (3rd place): USD 500**
+
+The organizers thank Tencent for supporting this challenge and research in audio editing.
 
 ## Contact
 
@@ -400,6 +425,8 @@ We have a Slack workspace and a WeChat group for real-time communication. For pr
     <li>Yan, Chao, et al. "Step-Audio-EditX Technical Report." arXiv:2511.03601 (2025).</li>
     <li>Yan, Canxiang, et al. "Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation." arXiv:2511.05516 (2025).</li>
     <li>Xu, Jin, et al. "Qwen3-Omni Technical Report." arXiv:2509.17765 (2025).</li>
+    <li id="ref-auk">Ma, Ziyang, et al. "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing." arXiv:2609.08936 (2026).</li>
+    <li id="ref-sam-audio">Shi, Bowen, et al. "SAM Audio: Segment Anything in Audio." arXiv:2512.18099 (2025).</li>
   </ol>
 </div>
 
