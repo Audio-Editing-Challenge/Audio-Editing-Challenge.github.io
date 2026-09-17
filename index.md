@@ -58,6 +58,10 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-09-11</div>
+      <div class="item">The baselines for both the Single Model Track and the Agent Track are now available! Check out the code and usage instructions on <a href="https://github.com/Audio-Editing-Challenge/Audio-Editing-Challenge-Baseline" target="_blank" rel="noopener noreferrer">GitHub</a>.</div>
+    </li>
+    <li>
       <div class="date">2026-09-01</div>
       <div class="item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform" target="_blank" rel="noopener noreferrer">Registration</a> for teams is open now! Register early to receive the latest updates.</div>
     </li>
