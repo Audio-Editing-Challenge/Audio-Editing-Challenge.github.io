@@ -58,6 +58,10 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-10-03</div>
+      <div class="item">The <a href="#registration-and-leaderboard">registration deadline</a> has been extended from October 1 to <strong>October 8, 2026</strong>. The <a href="track2/">Agent Track</a> model release cutoff has been extended from October 1 to <strong>November 1, 2026</strong>. The specific versions and weights of all model components must have been publicly released <strong>before November 1, 2026</strong>.</div>
+    </li>
+    <li>
       <div class="date">2026-09-11</div>
       <div class="item">The baselines for both the Single Model Track and the Agent Track are now available! Check out the code and usage instructions on <a href="https://github.com/Audio-Editing-Challenge/Audio-Editing-Challenge-Baseline" target="_blank" rel="noopener noreferrer">GitHub</a>.</div>
     </li>
@@ -100,13 +104,14 @@ The challenge features two complementary tracks:
 |-------|------|
 | Registration Opens and Challenge Guidelines Released | September 1, 2026 |
 | Challenge Begins | October 1, 2026 |
-| Data Released and Leaderboard Opens for Submissions | November 10, 2026 |
+| Registration Deadline (Extended) | October 8, 2026 |
+| Challenge Test Set and Submission SDK Released; Leaderboard Opens | November 10, 2026 |
 | Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
 | Evaluation and Reproducibility Check Completed | December 7, 2026 |
 | Final Rankings and Invited Teams Announced | December 8, 2026 |
 | Invited Two-Page ICASSP Papers Due | January 7, 2027 |
 
-**Note:** All deadlines are at 11:59 PM on the respective day in U.S. Pacific Time. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
+**Note:** Registration and submission deadlines are at 11:59 PM on the respective day in U.S. Pacific Time. For the Agent Track, model versions and weights must have been publicly released **before November 1, 2026**. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
 
 ## Challenge Tracks
 
@@ -139,7 +144,9 @@ The challenge provides **open-source baselines for both the Single Model Track a
 
 ### Benchmark
 
-During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics**. The dataset is available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). For final evaluation, the Single Model Track and the Agent Track will each use **500 previously unreleased test examples** held by the organizers. The two tracks will be ranked independently. These examples are constructed through the same MMAE pipeline and manually annotated and verified. Track 1 will be evaluated on examples from any audio modality in the MMAE **single** complexity category; the Agent Track will be evaluated across any audio modality and any complexity category. Test inputs and editing instructions will be provided for inference, while the rubrics remain private until the official results are finalized. The complete final set and its rubrics will be released after the competition.
+**Before November 10, 2026**, participants may use the publicly available **MMAE test set**, comprising **2,000 examples** and **17,741 atomic rubrics**, to develop and evaluate their models and agent systems. The dataset is available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE).
+
+**On November 10, 2026**, the organizers will release the **previously unreleased challenge test set** and the **submission software development kit (SDK)** for uploading results. The leaderboard will open for submissions on the same date. The Single Model Track and the Agent Track will each use **500 previously unreleased test examples**, and the two tracks will be ranked independently. These examples are constructed through the same MMAE pipeline and manually annotated and verified. Track 1 will be evaluated on examples from any audio modality in the MMAE **single** complexity category; the Agent Track will be evaluated across any audio modality and any complexity category. Test inputs and editing instructions will be provided for inference, while the rubrics remain private until the official results are finalized. The complete final set and its rubrics will be released after the competition.
 
 ### Submission Format
 
@@ -163,7 +170,9 @@ Systems are ranked primarily by **Overall EMR**, with ties broken first by Overa
 
 ## Registration and Leaderboard
 
-Team registration is now open. To participate, please complete the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform). Register early to receive the latest challenge updates.
+The registration deadline has been extended from October 1 to **October 8, 2026**. To participate, please complete the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform). Register early to receive the latest challenge updates.
+
+Before submissions open on **November 10, 2026**, the organizers will send a form to collect and confirm each team's final member list, **including supervisors and team leaders**. Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
 
 [Learn more about Leaderboard](leaderboard)
 

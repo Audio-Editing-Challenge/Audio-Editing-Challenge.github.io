@@ -12,7 +12,7 @@ Participants must build an **autonomous audio editing agent** that independently
 
 **Rules and Restrictions:**
 
-1. **Open-source models, tools, and data only.** Every component and data resource must be publicly available under research-permissive terms. The specific versions and weights of **all model components** in the agent system must have been publicly released **before October 1, 2026**. **Closed-source models are prohibited.**
+1. **Open-source models, tools, and data only.** Every component and data resource must be publicly available under research-permissive terms. The specific versions and weights of **all model components** in the agent system must have been publicly released **before November 1, 2026**. This extends the previous cutoff of October 1, 2026. **Closed-source models are prohibited.**
 2. **LLM deployment and API access.** Large language models (LLMs) used by the system may be deployed locally or accessed through cloud APIs, provided that the API-served version corresponds to publicly released model weights. Closed-source LLMs are prohibited. **All other models and tools must run locally.**
 3. **Reproducibility and auditing.** Teams must provide model versions, links to model weights, and evidence of their public release dates, along with deployment and API invocation configurations and execution logs. Finalists must also provide runnable code, environment specifications, prompts, tool-call records, intermediate artifacts, random seeds, runtimes, and final outputs for audit.
 4. **No human-in-the-loop.** Inference-time human assistance, output selection, and manual curation or post-processing are strictly prohibited.

@@ -8,11 +8,13 @@ permalink: /timeline/
 
 | Event | Date |
 |-------|------|
-| Participant Registration Opens | September 1, 2026 |
-| Challenge Announcement, Detailed Rules, and Data Release | October 1, 2026 |
-| Leaderboard Opens for Submissions | November 1, 2026 |
-| Leaderboard Submission Deadline | December 1, 2026 |
-| Submission Verification, Final Rankings, and Winner Announcement | December 8, 2026 |
-| Invited Two-Page ICASSP Paper Submission Deadline | January 7, 2027 |
+| Registration Opens and Challenge Guidelines Released | September 1, 2026 |
+| Challenge Begins | October 1, 2026 |
+| Registration Deadline (Extended) | October 8, 2026 |
+| Challenge Test Set and Submission SDK Released; Leaderboard Opens | November 10, 2026 |
+| Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
+| Evaluation and Reproducibility Check Completed | December 7, 2026 |
+| Final Rankings and Invited Teams Announced | December 8, 2026 |
+| Invited Two-Page ICASSP Papers Due | January 7, 2027 |
 
-**Note:** After December 1, 2026, the leaderboard will remain open and continue to evaluate new submissions, but these submissions will not be considered for the official challenge rankings. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
+**Note:** Registration and submission deadlines are at 11:59 PM on the respective day in U.S. Pacific Time. For the Agent Track, model versions and weights must have been publicly released **before November 1, 2026**. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.

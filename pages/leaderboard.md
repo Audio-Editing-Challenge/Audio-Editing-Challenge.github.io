@@ -4,13 +4,15 @@ title: Leaderboard
 permalink: /leaderboard/
 ---
 
-<!-- The registration form and leaderboard URLs will be added after they are confirmed. -->
+The leaderboard will open for submissions on **November 10, 2026**, when the organizers will release the challenge test set and the submission software development kit (SDK). The submission link will be announced here.
 
 ## Benchmark and Evaluation Protocol
 
 ### Benchmark
 
-During the development and leaderboard stages, both tracks use the public **MMAE benchmark**, comprising **2,000 examples** and **17,741 atomic rubrics** and available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE). For final evaluation, the Single Model Track and the Agent Track will each use **500 previously unreleased test examples** held by the organizers. The two tracks will be ranked independently. These examples are constructed through the same MMAE pipeline and manually annotated and verified.
+**Before November 10, 2026**, participants may use the publicly available **MMAE test set**, comprising **2,000 examples** and **17,741 atomic rubrics** and available on [Hugging Face](https://huggingface.co/datasets/BoJack/MMAE), to develop and evaluate their models and agent systems.
+
+**On November 10, 2026**, the organizers will release the **previously unreleased challenge test set** for leaderboard submissions. The Single Model Track and the Agent Track will each use **500 previously unreleased test examples**. The two tracks will be ranked independently. These examples are constructed through the same MMAE pipeline and manually annotated and verified. Test inputs and editing instructions will be provided for inference; evaluation rubrics will remain private until the official results are finalized.
 
 ### Submission Format
 
@@ -30,15 +32,21 @@ The audio files and JSONL manifest are packaged together and uploaded to the cha
 
 Systems are ranked primarily by **Overall EMR**, with ties broken first by Overall IFR and then by Overall CR.
 
+## Team Membership
+
+Before submissions open on **November 10, 2026**, the organizers will send a form to collect and confirm each team's final member list, **including supervisors and team leaders**. Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
+
 ## Competition Timeline
 
 | Event | Date |
 |-------|------|
-| Participant Registration Opens | September 1, 2026 |
-| Challenge Announcement, Detailed Rules, and Data Release | October 1, 2026 |
-| Leaderboard Opens for Submissions | November 1, 2026 |
-| Leaderboard Submission Deadline | December 1, 2026 |
-| Submission Verification, Final Rankings, and Winner Announcement | December 8, 2026 |
-| Invited Two-Page ICASSP Paper Submission Deadline | January 7, 2027 |
+| Registration Opens and Challenge Guidelines Released | September 1, 2026 |
+| Challenge Begins | October 1, 2026 |
+| Registration Deadline (Extended) | October 8, 2026 |
+| Challenge Test Set and Submission SDK Released; Leaderboard Opens | November 10, 2026 |
+| Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
+| Evaluation and Reproducibility Check Completed | December 7, 2026 |
+| Final Rankings and Invited Teams Announced | December 8, 2026 |
+| Invited Two-Page ICASSP Papers Due | January 7, 2027 |
 
-After December 1, 2026, the leaderboard will remain open, but later submissions will not be considered for the official challenge rankings. The timeline is tentative and subject to change in accordance with the ICASSP 2027 conference schedule.
+**Note:** Registration and submission deadlines are at 11:59 PM on the respective day in U.S. Pacific Time. For the Agent Track, model versions and weights must have been publicly released **before November 1, 2026**. This tentative timeline is subject to change in accordance with the ICASSP 2027 conference schedule.
