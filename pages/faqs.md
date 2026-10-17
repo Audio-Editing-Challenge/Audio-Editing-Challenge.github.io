@@ -27,3 +27,7 @@ permalink: /faqs/
 **Q: What can participants do if they cannot access the SAM Audio Large weights used in the baseline?**
 
 **A:** Participants who cannot access the [SAM Audio Large weights](https://huggingface.co/facebook/sam-audio-large) can try requesting access again from a different region. Access remains subject to the model provider's approval and license terms. Once approved, participants should log in with the approved Hugging Face account using `hf auth login` before downloading the weights.
+
+**Q: What sampling rate and channel format are required for uploaded audio?**
+
+**A:** The challenge uses Qwen3-Omni for evaluation. Uploaded audio must be sampled at 16 kHz (16,000 Hz) and contain a single channel (mono). Participants whose editing systems produce audio at a higher sampling rate, such as 44.1 kHz or 48 kHz, must resample the output to 16 kHz before uploading. Stereo or multichannel output must also be converted to mono.
