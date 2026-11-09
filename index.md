@@ -58,6 +58,14 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-11-09</div>
+      <div class="item">Participant IDs and submission keys have been distributed for uploading results to the challenge leaderboard. Participants who have not received their Participant ID and submission key should contact <a href="mailto:zhikangniu@sjtu.edu.cn">Zhikang Niu</a>.</div>
+    </li>
+    <li>
+      <div class="date">2026-11-04</div>
+      <div class="item"><a href="#registration-and-leaderboard">Final team confirmation</a> is now open. Registered teams should check their email for their personalized confirmation link and complete the form before submissions open on <strong>November 10, 2026</strong>. For missing emails, link issues, or other questions, please contact <a href="mailto:zhikangniu@sjtu.edu.cn">Zhikang Niu</a>.</div>
+    </li>
+    <li>
       <div class="date">2026-10-03</div>
       <div class="item">The <a href="#registration-and-leaderboard">registration deadline</a> has been extended from October 1 to <strong>October 8, 2026</strong>. The <a href="track2/">Agent Track</a> model release cutoff has been extended from October 1 to <strong>November 1, 2026</strong>. The specific versions and weights of all model components must have been publicly released <strong>before November 1, 2026</strong>.</div>
     </li>
@@ -158,6 +166,8 @@ For each test item, participants submit the edited audio file and a JSONL record
 
 The audio files and JSONL manifest are packaged together and uploaded to the challenge leaderboard. The two tracks are ranked independently.
 
+Participant IDs and submission keys have been distributed for uploading results to the challenge leaderboard. Participants who have not received their Participant ID and submission key should contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
+
 ### Evaluation Metrics
 
 Each rubric is evaluated three times by a frozen Qwen3-Omni model serving as the judge, with shuffled answer choices and majority voting [17]. The leaderboard reports:
@@ -170,9 +180,11 @@ Systems are ranked primarily by **Overall EMR**, with ties broken first by Overa
 
 ## Registration and Leaderboard
 
-The registration deadline has been extended from October 1 to **October 8, 2026**. To participate, please complete the [registration form](https://docs.google.com/forms/d/e/1FAIpQLSe3aLZSnqrpCq5Kg2Kw09Xvy0QpGZzraC9tzeGp-G6fob1q4g/viewform). Register early to receive the latest challenge updates.
+Team registration closed on **October 8, 2026**, following an extension from October 1.
 
-Before submissions open on **November 10, 2026**, the organizers will send a form to collect and confirm each team's final member list, **including supervisors and team leaders**. Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
+**Final team confirmation is now open.** Personalized confirmation links have been sent to registered teams' primary and backup email addresses, where provided. Each team should use its emailed link to review its team name and contact details and confirm its final member list, **including supervisors and team leaders**, before submissions open on **November 10, 2026**. Please submit **one confirmation per team**; team details can be corrected directly in the form. For missing emails, link issues, or other questions, please contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
+
+Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
 
 [Learn more about Leaderboard](leaderboard)
 

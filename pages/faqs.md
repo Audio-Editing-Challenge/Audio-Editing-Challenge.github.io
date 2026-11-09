@@ -18,7 +18,7 @@ permalink: /faqs/
 
 **Q: When is the final team member list confirmed?**
 
-**A:** Before submissions open on November 10, 2026, the organizers will send a form to collect and confirm each team's final member list, including supervisors and team leaders. Except in special circumstances, changes to team membership will not be permitted once submissions open.
+**A:** Final team confirmation is now open. Personalized confirmation links have been sent to registered teams' primary and backup email addresses, where provided. Each team should use its emailed link to review its team name and contact details and confirm its final member list, including supervisors and team leaders, before submissions open on November 10, 2026. Please submit one confirmation per team; team details can be corrected directly in the form. Except in special circumstances, changes to team membership will not be permitted once submissions open. For missing emails, link issues, or other questions, please contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
 
 **Q: Can a person participate in both tracks or join multiple teams?**
 

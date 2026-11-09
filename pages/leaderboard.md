@@ -24,6 +24,8 @@ For each test item, participants submit the edited audio file and a JSONL record
 
 The audio files and JSONL manifest are packaged together and uploaded to the challenge leaderboard. The two tracks are ranked independently.
 
+Participant IDs and submission keys have been distributed for uploading results to the challenge leaderboard. Participants who have not received their Participant ID and submission key should contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
+
 ### Evaluation Metrics
 
 1. **Instruction Following Rate (IFR):** the average score over rubrics that verify whether the requested edits were correctly executed.
@@ -34,7 +36,9 @@ Systems are ranked primarily by **Overall EMR**, with ties broken first by Overa
 
 ## Team Membership
 
-Before submissions open on **November 10, 2026**, the organizers will send a form to collect and confirm each team's final member list, **including supervisors and team leaders**. Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
+**Final team confirmation is now open.** Personalized confirmation links have been sent to registered teams' primary and backup email addresses, where provided. Each team should use its emailed link to review its team name and contact details and confirm its final member list, **including supervisors and team leaders**, before submissions open on **November 10, 2026**. Please submit **one confirmation per team**; team details can be corrected directly in the form. For missing emails, link issues, or other questions, please contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
+
+Except in special circumstances, **changes to team membership will not be permitted once submissions open**. **Each person may participate in both tracks, but may be listed on only one team per track.**
 
 ## Competition Timeline
 
