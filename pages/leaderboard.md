@@ -4,7 +4,7 @@ title: Leaderboard
 permalink: /leaderboard/
 ---
 
-The leaderboard will open for submissions on **November 10, 2026**, when the organizers will release the challenge test set and the submission software development kit (SDK). The submission link will be announced here.
+The leaderboard will open for submissions on **November 10, 2026**, when the organizers will release the challenge test set and the submission software development kit (SDK). The evaluation URL and track-specific Secret Keys are provided privately by the organizers.
 
 ## Benchmark and Evaluation Protocol
 
@@ -23,6 +23,8 @@ For each test item, participants submit the edited audio file and a JSONL record
 ```
 
 The audio files and JSONL manifest are packaged together and uploaded to the challenge leaderboard. The two tracks are ranked independently.
+
+Follow the [Submission Guide]({{ '/submission/' | relative_url }}) to prepare your files, upload with the SDK, and start evaluation on the website. Daily upload and evaluation submission limits are shown in the evaluation system.
 
 Participant IDs and submission keys have been distributed for uploading results to the challenge leaderboard. Participants who have not received their Participant ID and submission key should contact [Zhikang Niu](mailto:zhikangniu@sjtu.edu.cn).
 

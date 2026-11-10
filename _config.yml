@@ -46,6 +46,7 @@ plugins:
 header_pages:
   # - pages/about.md
   - pages/leaderboard.md
+  - pages/submission.md
   - pages/track1.md
   - pages/track2.md
   - pages/faqs.md
