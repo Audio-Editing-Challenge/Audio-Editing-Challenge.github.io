@@ -58,6 +58,10 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-11-10</div>
+      <div class="item">The submission guide is now available in the <a href="https://github.com/Audio-Editing-Challenge/Audio-Editing-Challenge-SDK" target="_blank" rel="noopener noreferrer">official SDK repository</a>. Participants must use the SDK to upload their results. The challenge test datasets are also available on Hugging Face: <a href="https://huggingface.co/datasets/ICASSP2027-AudioEditingChallenge/Track1-Single-Model" target="_blank" rel="noopener noreferrer">Track 1 (Single Model)</a> and <a href="https://huggingface.co/datasets/ICASSP2027-AudioEditingChallenge/Track2-Agent" target="_blank" rel="noopener noreferrer">Track 2 (Agent)</a>.</div>
+    </li>
+    <li>
       <div class="date">2026-11-09</div>
       <div class="item">Participant IDs and submission keys have been distributed for uploading results to the challenge leaderboard. Participants who have not received their Participant ID and submission key should contact <a href="mailto:zhikangniu@sjtu.edu.cn">Zhikang Niu</a>.</div>
     </li>
