@@ -78,6 +78,8 @@ The SDK validates the files, creates an uncompressed tar archive, uploads it, an
 
 A `queued` Submission is waiting to run; `evaluating` means evaluation is in progress. A `succeeded` Submission shows its scores. For a `failed` Submission, contact the organizers with its Submission ID and the displayed error message.
 
+**Evaluation may be delayed, and scores may take around 1 day to appear after submission.** You can return later to check your Submission status.
+
 ## Daily limits and troubleshooting
 
 **Each Secret Key allows 1 successful upload and 1 evaluation submission per day for its track.** Quotas reset at **00:00 UTC**. Confirm your Secret Key on the evaluation website to see your remaining allowances. Failed evaluation submissions count toward the daily limit.
