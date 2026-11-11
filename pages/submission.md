@@ -80,7 +80,7 @@ A `queued` Submission is waiting to run; `evaluating` means evaluation is in pro
 
 ## Daily limits and troubleshooting
 
-**Upload and evaluation submission quotas are separate. The daily limits and remaining allowances displayed in the evaluation system are authoritative.** Confirm your Secret Key to see both. Quotas reset at 00:00 UTC; consult the system for the current rules on whether failed submissions count.
+**Each Secret Key allows 1 successful upload and 1 evaluation submission per day for its track.** Quotas reset at **00:00 UTC**. Confirm your Secret Key on the evaluation website to see your remaining allowances. Failed evaluation submissions count toward the daily limit.
 
 - **Validation fails:** correct the reported IDs, paths, audio format, duration, or archive size before retrying.
 - **An upload request times out or loses its connection:** check Ready Uploads on the website before uploading again; the system may already have accepted the files.
