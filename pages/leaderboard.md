@@ -4,6 +4,8 @@ title: Leaderboard
 permalink: /leaderboard/
 ---
 
+The leaderboard can be viewed on the submission page of the evaluation platform.
+
 The leaderboard will open for submissions on **November 10, 2026**, when the organizers will release the challenge test set and the submission software development kit (SDK). The evaluation URL and track-specific Secret Keys are provided privately by the organizers.
 
 ## Benchmark and Evaluation Protocol
