@@ -12,7 +12,7 @@ permalink: /timeline/
 | Challenge Begins | October 1, 2026 |
 | Registration Deadline (Extended) | October 8, 2026 |
 | Challenge Test Set and Submission SDK Released; Leaderboard Opens | November 10, 2026 |
-| Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
+| Final Submission Deadline and Leaderboard Freeze | ~~November 25, 2026~~ **November 28, 2026** |
 | Evaluation and Reproducibility Check Completed | December 7, 2026 |
 | Final Rankings and Invited Teams Announced | December 8, 2026 |
 | Invited Two-Page ICASSP Papers Due | January 7, 2027 |

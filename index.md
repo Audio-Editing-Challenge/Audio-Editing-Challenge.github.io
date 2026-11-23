@@ -58,6 +58,10 @@ title: ""
   <div class="header">News</div>
   <ul>
     <li>
+      <div class="date">2026-11-23</div>
+      <div class="item">The final submission deadline and leaderboard freeze have been extended by three days, from November 25 to <strong>November 28, 2026, at 11:59 PM U.S. Pacific Time (PST)</strong>. This gives teams more time to refine their ideas and submit their solutions. Teams that have not yet submitted are encouraged to take this opportunity.</div>
+    </li>
+    <li>
       <div class="date">2026-11-10</div>
       <div class="item">The submission guide is now available in the <a href="https://github.com/Audio-Editing-Challenge/Audio-Editing-Challenge-SDK" target="_blank" rel="noopener noreferrer">official SDK repository</a>. Participants must use the SDK to upload their results. The challenge test datasets are also available on Hugging Face: <a href="https://huggingface.co/datasets/ICASSP2027-AudioEditingChallenge/Track1-Single-Model" target="_blank" rel="noopener noreferrer">Track 1 (Single Model)</a> and <a href="https://huggingface.co/datasets/ICASSP2027-AudioEditingChallenge/Track2-Agent" target="_blank" rel="noopener noreferrer">Track 2 (Agent)</a>.</div>
     </li>
@@ -118,7 +122,7 @@ The challenge features two complementary tracks:
 | Challenge Begins | October 1, 2026 |
 | Registration Deadline (Extended) | October 8, 2026 |
 | Challenge Test Set and Submission SDK Released; Leaderboard Opens | November 10, 2026 |
-| Final Submission Deadline and Leaderboard Freeze | November 25, 2026 |
+| Final Submission Deadline and Leaderboard Freeze | ~~November 25, 2026~~ **November 28, 2026** |
 | Evaluation and Reproducibility Check Completed | December 7, 2026 |
 | Final Rankings and Invited Teams Announced | December 8, 2026 |
 | Invited Two-Page ICASSP Papers Due | January 7, 2027 |
